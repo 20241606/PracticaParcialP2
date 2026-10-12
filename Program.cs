@@ -117,6 +117,36 @@ class Program
 
         Console.WriteLine();
 
+        
+        //Ejercicio 6
+
+        //Creamos una cuenta bancaria
+        CuentaBancaria cuenta = new CuentaBancaria();
+
+        //Depositamos 1500 en la cuenta
+        cuenta.Depositar(1500);
+
+        //Mostramos el saldo que devuelve ObtenerSaldo()
+        Console.WriteLine("Saldo actual: " + cuenta.ObtenerSaldo());
+
+        Console.WriteLine();
+
+        //Ejercicio 7
+
+        //Creamos un carro y probamos sus metodos
+        Carro carro = new Carro();
+
+        carro.Encender();
+        carro.Apagar();
+
+        //Creamos una motocicleta y probamos sus metodos
+        Motocicleta moto = new Motocicleta();
+
+        moto.Encender();
+        moto.Apagar();
+
+        Console.WriteLine();
+
 
         Console.ReadKey();
     }
